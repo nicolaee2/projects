@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    height: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #F4D04E;
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    height: 522px;
+    width: 384px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 9px 9px 0 0 black;
+    position: relative;
+}
+
+.main {
+    width: 336px;
+    height: 200px;
+    position: absolute;
+    left: 24px;
+    top: 24px;
+
+    border-radius: 10px;
+}
+
+.content {
+    width: 336px;
+    height: 194px;
+    left: 24px;
+    top: 248px;
+    position: absolute;
+}
+
+.tag {
+    background: #F4D04E;
+    padding: 4px 12px;
+    width: 82px;
+    height: 29px;
+    border-radius: 5px;
+    
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0;
+
+}
+
+.date {
+    position: absolute;
+    width: 143px;
+    height: 21px;
+
+    top: 41px;
+
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0;
+
+}
+    
+.title {
+    position: absolute;
+    width: 336px;
+    height: 36px;
+
+    top: 73px;
+
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+.title:hover {
+    color: #F4D04E;
+    cursor: pointer;
+}
+
+    
+.description {
+    position: absolute;
+    width: 336px;
+    height: 72px;
+
+    top: 122px;
+
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+
+    color: #6B6B6B;
+}
+
+.info {
+    width: 129px;
+    height: 32px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 24px;
+    top: 466px;
+}
+
+.name {
+    width: 85px;
+    height: 21px;
+    position: absolute;
+    left: 68px;
+    top: 471.5px;
+
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0;
+}
