@@ -1,0 +1,68 @@
+.st0 {
+    fill:#E26D56;
+}
+.st1 { 
+    fill:#BF4737;
+}
+.st2 {
+    fill:#57DDB7;
+}
+.st3 {
+    fill:#EDCB5D;
+}
+.st4 {
+    fill:#5296CE;
+}
+.st5 {
+    fill:#FF66A4;}
+.st6 {
+    fill:#9B3E71;
+}
+.st7 {
+    fill:#45398E;
+}
+.st8 {
+    fill:#66FBFF;
+}
+.st9 {
+    fill:#9DC667;
+}
+.st10 {
+    fill:#DD6258;
+}
+.st11 {
+    fill:#F4731C;
+}
+
+svg .st2,
+svg .st3,
+svg .st4,
+svg .st5,
+svg .st6,
+svg .st7,
+svg .st8,
+svg .st9,
+svg .st10,
+svg .st11 {
+    animation-name: simple-move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+svg .st0, svg .st1 {
+    animation-name: base-move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes base-move {
+    100% {
+        transform: translate(10px, -40px) scale(1.05);
+    }
+}
+
+@keyframes simple-move {
+    100% {
+        transform: translate(10px, -10px);
+    }
+}

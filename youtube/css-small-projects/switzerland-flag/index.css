@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root { 
+    --white: #fff;
+    --red: #FF0002;
+    --width: 200px;
+    --height: 200px;
+}
+
+.flag {
+    width: var(--width);
+    height: var(--height);
+    background: var(--red);
+    position: relative;
+}
+
+.cross {
+    background: var(--white);
+}
+
+.cross1 {
+    width: calc(5/8 * var(--width));
+    height: calc(3/16 * var(--height));
+    position: absolute;
+    top: calc(13/32 * var(--height));
+    left: calc(3/16 * var(--width));
+}
+
+.cross2 {
+    width: calc(3/16 * var(--width));
+    height: calc(5/8 * var(--height));
+    position: absolute;
+    
+    top: calc(3/16 * var(--height));
+    left: calc(13/32 * var(--width));
+}

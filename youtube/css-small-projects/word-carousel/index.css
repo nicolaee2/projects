@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --bg-word: #5134ff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1::after {
+    content: "";
+    animation-name: word-carousel;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    background: var(--bg-word);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+@keyframes word-carousel {
+    0% {
+        content: "Cecilia";
+    }
+    
+    25% {
+        content: "Ronaldo";
+    }
+    
+    50% {
+        content: "Mom";
+    }
+    
+    75% {
+      content: "Dad";  
+    }
+    
+    100% {
+        content: "Cecilia";
+    }
+}

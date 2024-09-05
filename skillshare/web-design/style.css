@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hero-banner {
+    background-color: #007FFF;
+    height: 100vh;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    width: 960px;
+    height: 474px;
+    margin: 0 auto;
+    padding: 129px 0;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.hero-banner h4 {
+    color: white;
+}
+
+.hero-banner a {
+    color: white;
+}
