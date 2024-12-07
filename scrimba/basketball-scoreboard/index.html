@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css" />
+        <link
+            href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="scoreboard">
+                <div>
+                    <h3 class="team">HOME</h3>
+                    <div class="score-area">
+                        <p class="score-value" id="home-score">0</p>
+                    </div>
+                    <div class="btns">
+                        <button class="btn" id="home-1">+1</button>
+                        <button class="btn" id="home-2">+2</button>
+                        <button class="btn" id="home-3">+3</button>
+                    </div>
+                    <div class="fault-area">
+                        <p class="fault-value" id="home-fouls">0</p>
+                    </div>
+                    <button class="btn-fault" id="home-foul">Fault</button>
+                </div>
+                <div>
+                    <h3 class="team">GUEST</h3>
+                    <div class="score-area">
+                        <p class="score-value" id="guest-score">0</p>
+                    </div>
+                    <div class="btns">
+                        <button class="btn" id="guest-1">+1</button>
+                        <button class="btn" id="guest-2">+2</button>
+                        <button class="btn" id="guest-3">+3</button>
+                    </div>
+                    <div class="fault-area">
+                        <p class="fault-value" id="guest-fouls">0</p>
+                    </div>
+                    <button class="btn-fault" id="guest-foul">Fault</button>
+                </div>
+            </div>
+            <button class="btn-reset" id="reset">New Game</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

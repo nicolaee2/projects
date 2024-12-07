@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background: #1b244a;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.btn-reset {
+    margin: 50px auto;
+    display: block;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Verdana", sans-serif;
+    background: #10b981;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.winner {
+    border: 3px solid #10b981;
+    border-radius: 5px;
+}
+
+.team {
+    color: #eeeeee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+.score-area {
+    width: 155px;
+    height: 120px;
+    margin-top: 21px;
+    border-radius: 10px;
+    background: #080001;
+}
+
+.score-value {
+    color: #f94f6d;
+    font-family: "Cursed Timer ULiL", sans-serif;
+    font-size: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns {
+    width: 155px;
+    height: 45px;
+    margin-top: 26px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    width: 45px;
+    height: 45px;
+    font-family: "Cursed Timer ULiL", sans-serif;
+    background: #1b244a;
+    color: #9aabd8;
+    font-size: 18px;
+    border: 3px solid #9aabd8;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fault-area {
+    width: 75px;
+    height: 75px;
+    margin: 26px auto 0 auto;
+    background-color: #080001;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fault-value {
+    color: #f94f6d;
+    font-family: "Cursed Timer ULiL", sans-serif;
+    font-size: 30px;
+}
+
+.btn-fault {
+    width: 155px;
+    height: 45px;
+    margin-top: 26px;
+    font-family: "Cursed Timer ULiL", sans-serif;
+    background: #1b244a;
+    color: #9aabd8;
+    font-size: 18px;
+    border: 3px solid #9aabd8;
+    border-radius: 5px;
+    cursor: pointer;
+}
