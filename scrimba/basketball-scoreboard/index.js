@@ -2,11 +2,13 @@ let homeScore = 0;
 let guestScore = 0;
 let homeFouls = 0;
 let guestFouls = 0;
+let seconds = 15 * 60;
 
 const homeScoreElement = document.getElementById("home-score");
 const guestScoreElement = document.getElementById("guest-score");
 const homeFoulsElement = document.getElementById("home-fouls");
 const guestFoulsElement = document.getElementById("guest-fouls");
+const timerElement = document.getElementById("timer");
 
 function updateWinner() {
     homeScoreElement.classList.remove("winner");
@@ -58,10 +60,16 @@ document.getElementById("reset").addEventListener("click", function () {
     guestScore = 0;
     homeFouls = 0;
     guestFouls = 0;
+    seconds = 15 * 60;
     homeScoreElement.textContent = homeScore;
     guestScoreElement.textContent = guestScore;
     homeFoulsElement.textContent = homeFouls;
     guestFoulsElement.textContent = guestFouls;
+
+    clearInterval(counterInterval);
+    counterInterval = setInterval(countDown, 1000);
+
+    updateTimer();
     updateWinner();
 });
 
@@ -74,3 +82,21 @@ document.getElementById("guest-foul").addEventListener("click", function () {
     guestFouls++;
     guestFoulsElement.textContent = guestFouls;
 });
+
+function updateTimer() {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    timerElement.textContent = `${minutes}:${
+        remainingSeconds < 10 ? "0" : ""
+    }${remainingSeconds}`;
+}
+
+function countDown() {
+    if (seconds > 0) {
+        seconds--;
+        updateTimer();
+    }
+}
+
+let counterInterval = setInterval(countDown, 1000);
+updateTimer();
