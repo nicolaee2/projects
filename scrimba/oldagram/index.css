@@ -1,0 +1,116 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    background: #ededed;
+}
+
+header,
+.container {
+    background: white;
+}
+
+header {
+    border-bottom: 1px solid #c6c6c6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+header .logo {
+    width: 127px;
+    margin: 16px 0 18px 15px;
+}
+
+header .avatar {
+    margin: 16px 16px 17px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+}
+
+.post {
+    display: block;
+    height: 375px;
+    width: 375px;
+}
+
+.container {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/* Account styling */
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.header .avatar {
+    margin: 10px 0 11px 10px;
+}
+
+.personal-info {
+    font-family: inherit;
+}
+
+.name {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.location {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* icons section styles */
+
+.icons {
+    width: 90px;
+    margin: 21px 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    width: 22px;
+}
+
+.likes {
+    width: 343px;
+    margin: 10px auto 0 auto;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+.comment {
+    width: 343px;
+    margin: 10px auto 16px auto;
+    font-size: 13px;
+}
+
+.comment span {
+    font-weight: 700;
+}
