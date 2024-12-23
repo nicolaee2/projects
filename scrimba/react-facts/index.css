@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", serif;
+    background-color: #282d35;
+}
+
+header {
+    height: 6rem;
+    background-color: #21222a;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    padding: 2rem 1.5rem;
+}
+
+header nav img {
+    width: 2rem;
+}
+
+header nav span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+    color: #61dafb;
+}
+
+main {
+    padding: 4rem 2rem;
+    color: #ffffff;
+    background-image: url("./images/react-logo-half.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+main ul {
+    margin: 3rem;
+    font-size: 1rem;
+}
+
+main ul li {
+    margin-bottom: 1.25rem;
+}
+
+main ul li::marker {
+    color: #61dafb;
+    font-size: 1.5rem;
+}
