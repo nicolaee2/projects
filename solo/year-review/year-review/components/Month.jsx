@@ -6,9 +6,9 @@ export default function Month({ month, days }) {
         <div className={styles.month}>
             <p className={styles.number}>{month}</p>
             <div>
-                {Array.from({ length: days }, (_, index) => (
-                    <Day key={index} />
-                ))}
+                {Array.from({ length: days }, (_, index) => {
+                    return <Day key={index} month={month} day={index} />;
+                })}
             </div>
         </div>
     );

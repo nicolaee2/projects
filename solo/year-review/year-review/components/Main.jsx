@@ -1,4 +1,3 @@
-import NumberList from "./NumberList";
 import Year from "./Year";
 export default function Main() {
     return (
