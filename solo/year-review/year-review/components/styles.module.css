@@ -1,0 +1,27 @@
+.square {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.number {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.bad {
+    background-color: red;
+}
+
+.average {
+    background-color: yellow;
+}
+
+.good {
+    background-color: green;
+}
+
+.month {
+    display: inline-block;
+}
