@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Amazon product page</title>
-        <link rel="stylesheet" href="styles.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Amazon Product Page" />
+        <title>Amazon Product Page</title>
+        <link rel="stylesheet" href="./styles/styles.css" />
     </head>
     <body>
-        <content class="container">
-            <div class="left">
-                <p class="category">Books > Humor & Entertainment > Humor</p>
-                <img class="main-img" src="book-cover.jpg" />
-            </div>
-            <div class="right">
+        <main class="container" role="main">
+            <section class="left">
+                <nav aria-label="Breadcrumb">
+                    <p class="category">
+                        <a href="#">Books</a> &gt;
+                        <a href="#">Humor & Entertainment</a> &gt;
+                        <a href="#">Humor</a>
+                    </p>
+                </nav>
+                <figure>
+                    <img
+                        class="main-img"
+                        src="./img/book-cover.jpg"
+                        alt="Book cover of 'How to Talk to Your Cat About Gun Safety'"
+                    />
+                </figure>
+            </section>
+            <article class="right">
                 <h1 class="title">
                     How to Talk to Your Cat About Gun Safety: And Abstinence,
                     Drugs, Satanism, and Other Dangers That Threaten Their Nine
@@ -21,7 +36,11 @@
                     <a class="author-name" href="author.html">Zachary Auburn</a>
                     (Author)
                 </p>
-                <img class="ratings" src="ratings.png" />
+                <img
+                    class="ratings"
+                    src="./img/ratings.png"
+                    alt="4.5-star rating"
+                />
                 <p class="important-text">
                     The cats of America are under siege!
                 </p>
@@ -47,7 +66,7 @@
                     need to use the internet? Can't he just play with yarn like
                     cats used to do?"
                 </p>
-            </div>
-        </content>
+            </article>
+        </main>
     </body>
 </html>
