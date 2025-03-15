@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 0 14px;
+    height: 90px;
+    box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 1);
+}
+
+input[type="color"] {
+    border: none;
+    cursor: pointer;
+    width: 61px;
+    height: 42px;
+}
+
+select {
+    flex-grow: 1;
+
+    /* text */
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #111827;
+
+    /* select box */
+    height: 42px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 9px 13px;
+    cursor: pointer;
+
+    /* Arrow */
+    appearance: none;
+    background-image: url("./icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 17px center;
+    background-size: 14px;
+}
+
+select:focus {
+    outline: none;
+}
+
+option {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #111827;
+    padding: 50px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #374151;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    padding: 13px 11px;
+    cursor: pointer;
+}
+
+#colors {
+    display: flex;
+    height: 500px;
+}
+
+.color {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+
+.rect {
+    height: 454px;
+    width: 100%;
+}
+
+.color p {
+    font-family: inherit;
+    font-size: 0.75rem;
+    font-weight: 500;
+    height: 46px;
+    color: #2b283a;
+    cursor: pointer;
+    background-color: #ffffff;
+}
