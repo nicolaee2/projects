@@ -1,59 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="styles.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="A homepage for a local district" />
+        <title>Torshov</title>
+        <link rel="stylesheet" href="./styles/styles.css" />
     </head>
     <body>
-        <div id="hero">
+        
+        <!-- HERO SECTION -->
+        <section id="hero" role="banner">
             <h1>Visit Torshov</h1>
-            <h2>
-                Enjoy culture and sports in this vibrant district close to the
-                center of Oslo.
-            </h2>
-        </div>
-
-        <div id="activities">
-            <h3>Top three activities to do at Torshov</h3>
+            <p>
+                Enjoy culture and sports in this vibrant district close to the center of Oslo.
+            </p>
+        </section>
+        
+        <!-- ACTIVITIES SECTION -->
+        <section id="activities">
+            <h2>Top three activities to do at Torshov</h2>
             <div id="activities-group">
-                <div class="activity">
-                    <img src="images/theatre.jpg" />
-                    <h3>Attend a show or a concert</h3>
+                <article class="activity">
+                    <figure>
+                        <img
+                            src="images/theatre.jpg"
+                            alt="Theatre performance at Torshov Theatre"
+                        />
+                    </figure>
+                    <h3>Attend a Show or a Concert</h3>
                     <p>
                         The Torshov Theatre is a great place to spend your night
                         out.
                     </p>
-                </div>
-                <div class="activity">
-                    <img src="images/park.jpg" />
-                    <h3>Go for a piknic in the local park</h3>
+                </article>
+                <article class="activity">
+                    <figure>
+                        <img
+                            src="images/park.jpg"
+                            alt="People having a picnic in Torshov Park"
+                        />
+                    </figure>
+                    <h3>Go for a Picnic in the Local Park</h3>
                     <p>
-                        The Torshov Park is perfect for piknic, getting some
-                        tan, or just chilling out.
+                        The Torshov Park is perfect for a picnic, getting some
+                        sun, or just chilling out.
                     </p>
-                </div>
-                <div class="activity">
-                    <img src="images/sports.jpg" />
-                    <h3>Play sports at the Lilleborg field</h3>
+                </article>
+                <article class="activity">
+                    <figure>
+                        <img
+                            src="images/sports.jpg"
+                            alt="People playing sports at Lilleborg field"
+                        />
+                    </figure>
+                    <h3>Play Sports at the Lilleborg Field</h3>
                     <p>
-                        Play volleyball, football, basket ball or lift some
+                        Play volleyball, football, basketball, or lift some
                         weights.
                     </p>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div id="guide">
+        <!-- GUIDE SECTION -->
+        <section id="guide">
             <div class="container">
-                <img src="images/per.jpg" />
+                <figure>
+                    <img
+                        src="images/per.jpg"
+                        alt="Per Harald Borgen, your guide at Torshov"
+                    />
+                </figure>
                 <div>
-                    <h3>Your guide</h3>
+                    <h2>Your Guide</h2>
                     <p>
                         "I have lived at Torshov for over 30 years, so I can
                         show you all of its best parts and hidden secrets."
                     </p>
-                    <h4>Per Harald Borgen</h4>
+                    <h3>Per Harald Borgen</h3>
                 </div>
             </div>
-        </div>
+        </section>
     </body>
 </html>

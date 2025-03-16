@@ -1,0 +1,203 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+img {
+    width: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+figure {
+    margin: 0;
+}
+
+section#hero,
+section#activities,
+section#guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#hero {
+    min-height: 343px;
+    background-image: url("../images/torshov.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#hero h1 {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 3.8125em;
+    padding: 0.09375em 0.375em 0.15625em 0.375em;
+    background-color: #1D3557;
+}
+
+section#hero p {
+    color: white;
+    font-size: 1.1875rem;
+    margin-top: 0.84em;
+    margin-bottom: 6.68em;
+    padding: 0.42em 1.47em;
+    max-width: 355px;
+    background-color: #457b9d;
+} 
+
+section#hero h1,
+section#hero p {
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+section#activities {
+    min-height: 378px;
+    background-color: #f1faee;
+    justify-content: start;
+}
+
+section#activities h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1d3557;
+    margin-top: 1.625em;
+}
+
+section#activities #activities-group {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0 2.375em;
+}
+
+section#activities #activities-group .activity {
+    max-width: 200px;
+    height: 227px;
+    margin-bottom: 2em;
+    color: 1D3557;
+}
+
+section#activities #activities-group .activity img {
+    border-radius: 100%;
+    width: 100px;
+}
+
+#activities-group .activity h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#activities-group .activity p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#activities-group .activity h3,
+#activities-group .activity p {
+    color: #1d3557;
+    margin-top: 1.4375em;
+}
+
+section#guide {
+    background-color: #ffffff;
+    min-height: 394px;
+}
+
+section#guide .container {
+    margin-top: 3.125em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: #a8dadc;
+    border-radius: 10px;
+    max-width: 400px;
+    min-height: 300px;
+    color: #1d3557;
+    box-shadow: 0 5px 0 black;
+}
+
+section#guide .container img {
+    max-width: 180px;
+    max-height: 250px;
+    margin: 1.4375em 0.4375em 0 0.875em;
+    border-radius: 10px;
+}
+
+section#guide .container div {
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#guide .container div h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+section#guide .container div p {
+    margin-top: 14px;
+    margin-right: 11px;
+    font-size: 16px;
+    font-style: italic;
+    max-width: 190px;
+}
+
+section#guide .container div h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 26px;
+}
+
+
+@media screen and (min-width: 600px) {
+    section#activities #activities-group {
+        flex-direction: row;
+        margin-top: 3.43em;
+    }
+    
+    section#guide .container img {
+        margin-bottom: 1.4375em;
+        width: 180px;
+        height: 250px;
+    }
+    
+    section#activities #activities-group .activity {
+        margin-bottom: 0em;
+    }
+    
+    section#guide {
+        margin-bottom: 0;
+    }
+    
+    section#guide .container {
+        flex-direction: row;
+        width: 400px;
+    }
+    
+    section#guide .container div {
+        margin-top: 2em;
+        padding: 0em;
+    }
+    
+    section#guide .container div p {
+        width: 190px;
+    }
+    
+}
