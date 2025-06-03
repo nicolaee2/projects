@@ -55,6 +55,7 @@ header p {
 
 #translator textarea {
     height: 118px;
+    width: 100%;
     resize: none;
     color: #333333;
     background-color: #eff0f4;
@@ -132,4 +133,10 @@ button {
     border-radius: 0.5rem;
     cursor: pointer;
     margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }

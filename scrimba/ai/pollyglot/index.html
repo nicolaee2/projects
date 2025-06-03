@@ -29,43 +29,53 @@
         </header>
         <main>
             <section id="translator">
-                <h2>Text to translate 👇</h2>
-                <textarea id="request"></textarea>
-                <h2>Select a language 👇</h2>
-                <fieldset id="languages">
-                    <label for="french">
-                        <input
-                            type="radio"
-                            id="french"
-                            name="language"
-                            value="french"
-                        />
-                        French
-                        <img src="./assets/fr-flag.png" alt="France flag" />
-                    </label>
-                    <label for="spanish">
-                        <input
-                            type="radio"
-                            id="spanish"
-                            name="language"
-                            value="spanish"
-                        />
-                        Spanish
-                        <img src="./assets/sp-flag.png" alt="Spain flag" />
-                    </label>
-                    <label for="japanese">
-                        <input
-                            type="radio"
-                            id="japanese"
-                            name="language"
-                            value="japanese"
-                        />
-                        Japanese
-                        <img src="./assets/jpn-flag.png" alt="Japan flag" />
-                    </label>
-                </fieldset>
+                <div id="translate">
+                    <h2>Text to translate 👇</h2>
+                    <textarea id="translate-text"></textarea>
+                    <h2>Select a language 👇</h2>
+                    <fieldset id="languages">
+                        <label for="french">
+                            <input
+                                type="radio"
+                                id="french"
+                                name="language"
+                                value="french"
+                                checked
+                            />
+                            French
+                            <img src="./assets/fr-flag.png" alt="France flag" />
+                        </label>
+                        <label for="spanish">
+                            <input
+                                type="radio"
+                                id="spanish"
+                                name="language"
+                                value="spanish"
+                            />
+                            Spanish
+                            <img src="./assets/sp-flag.png" alt="Spain flag" />
+                        </label>
+                        <label for="japanese">
+                            <input
+                                type="radio"
+                                id="japanese"
+                                name="language"
+                                value="japanese"
+                            />
+                            Japanese
+                            <img src="./assets/jpn-flag.png" alt="Japan flag" />
+                        </label>
+                    </fieldset>
+                    <button id="translate-button" disabled>Translate</button>
+                </div>
 
-                <button id="translate">Translate</button>
+                <div id="start-over" hidden>
+                    <h2>Original text 👇</h2>
+                    <textarea id="start-over-original-text" readonly></textarea>
+                    <h2>Your translation 👇</h2>
+                    <textarea id="start-over-translated-text" readonly></textarea>
+                    <button id="start-over-button">Start Over</button>
+                </div>
             </section>
         </main>
         <script src="index.js" type="module"></script>
